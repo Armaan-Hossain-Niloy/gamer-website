@@ -197,40 +197,31 @@ nav a {
     font-size: .8rem;
     text-align: center;
 }
-
 .game-img {
+    position: relative;
+  }
+  
+  .img-container {
     position: relative;
     display: inline-block;
   }
   
-  .game-img .play-button {
+  .play-button {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 70%  42% 48%  43%;
-    /* padding: 20%; */
-    border-radius: 5%;
-    opacity: 0;
-    transition: opacity 0.3s;
+    display: none; /* Hide initially */
+  }
+  
+  .game-img:hover .img-container img {
+    border: 2px solid red;
   }
   
   .game-img:hover .play-button {
-    opacity: 1;
+    display: block; /* Show play button on hover */
   }
   
-  .game-img p {
-    opacity: 1;
-    transition: opacity 0.3s;
-  }
-  .game-img img:hover{
-    border: 2px solid;
-    border-color: #F948B2;
-  }
-  
-
 
 
 /* play-download section */
