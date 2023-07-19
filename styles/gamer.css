@@ -197,48 +197,57 @@ nav a {
 }
 
 /* play-download section */
-.play-download{
+.play-download {
     /* border: 2px solid; */
 }
-.play-content{
+
+.play-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     /* border: 2px solid ; */
 }
+
 .play-download {
     padding-left: 100px;
     padding-right: 100px;
     margin-top: 100px;
 }
-.play-image{
+
+.play-image {
     padding-left: 50px;
 }
+
 .play-description {
     text-align: right;
 }
-.play-description h2{
+
+.play-description h2 {
     font-weight: 700;
     font-size: 2.5rem;
 }
-.play-description p{
+
+.play-description p {
     color: #534C64;
     font-weight: 400;
     font-size: 12px;
 }
+
 .play-instant {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.big-img{
+
+.big-img {
     height: 400px;
     width: 350px;
     margin-left: 90px;
 }
-.small-img{
+
+.small-img {
     height: 200px;
     width: 150px;
     border-radius: 8px;
@@ -246,6 +255,45 @@ nav a {
     bottom: 150px;
     left: 20px;
 }
+
+/* game type section style */
+.game-type {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.game-type-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: white;
+}
+
+.game:hover {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid;
+    border-color: #F948B2;
+}
+.game h5{
+    font-weight: 600;
+    font-size: .6rem;
+}
+
 /* for mobile device */
 
 @media screen and (max-width: 576px) {
@@ -304,12 +352,44 @@ nav a {
     .game-images-container {
         padding-left: 80px;
     }
+
     /* play-download */
-    .play-content{
+    .play-content {
         flex-direction: column;
         align-items: center;
     }
-    .play-description{
+
+    .play-description {
         text-align: center;
+    }
+
+    .play-download {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .big-img {
+        height: 300px;
+        width: 250px;
+        margin-left: 90px;
+    }
+
+    .small-img {
+        height: 200px;
+        width: 150px;
+        border-radius: 8px;
+        position: relative;
+        bottom: 150px;
+        left: 20px;
+    }
+    /* game type section */
+    .game-type-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .game-type {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
