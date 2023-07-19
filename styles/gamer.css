@@ -197,31 +197,32 @@ nav a {
     font-size: .8rem;
     text-align: center;
 }
+
 .game-img {
     position: relative;
-  }
-  
-  .img-container {
+}
+
+.img-container {
     position: relative;
     display: inline-block;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none; /* Hide initially */
-  }
-  
-  .game-img:hover .img-container img {
+    display: none;
+}
+
+.game-img:hover .img-container img {
     border: 2px solid red;
-  }
-  
-  .game-img:hover .play-button {
-    display: block; /* Show play button on hover */
-  }
-  
+}
+
+.game-img:hover .play-button {
+    display: block;
+}
+
 
 
 /* play-download section */
