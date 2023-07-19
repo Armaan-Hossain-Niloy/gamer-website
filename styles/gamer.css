@@ -182,6 +182,8 @@ nav a {
 .game-images-container {
     margin-top: 50px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -195,6 +197,41 @@ nav a {
     font-size: .8rem;
     text-align: center;
 }
+
+.game-img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .game-img .play-button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 61%  42% 56%  43%;
+    /* padding: 20%; */
+    border-radius: 5%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .game-img:hover .play-button {
+    opacity: 1;
+  }
+  
+  .game-img p {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .game-img img:hover{
+    border: 2px solid;
+    border-color: #F948B2;
+  }
+  
+
+
 
 /* play-download section */
 .play-download {
@@ -482,25 +519,29 @@ i {
 }
 
 @media screen and (min-width: 576px) and (max-width:960px) {
-    .nav-section{
+    .nav-section {
         padding: 0px 60px;
     }
-    .bannar{
+
+    .bannar {
         flex-direction: column-reverse;
         padding: 10px;
     }
-    .bannar-content{
+
+    .bannar-content {
         padding-bottom: 20px;
     }
-    .game-images-container{
+
+    .game-images-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
     }
+
     .play-download {
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 80px;
     }
-    
+
 }
