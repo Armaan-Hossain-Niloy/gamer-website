@@ -385,7 +385,7 @@ i {
     }
 
     .bannar-content {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         margin-left: 20px;
     }
@@ -479,4 +479,28 @@ i {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+}
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    .nav-section{
+        padding: 0px 60px;
+    }
+    .bannar{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .bannar-content{
+        padding-bottom: 20px;
+    }
+    .game-images-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .play-download {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
+    }
+    
 }
