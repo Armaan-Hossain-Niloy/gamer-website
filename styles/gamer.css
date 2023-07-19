@@ -67,27 +67,35 @@ nav a {
 
 /* Bannar section style */
 .bannar {
-    background-image: url(../images/Group\ 14.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 50% 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0px 100px;
-    /* background-color: #d3c3c3a7; */
+    padding-right: 100px;
     /* border: 2px solid salmon; */
 }
 
-.bannar-description {
+.bannar-content {
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
     min-width: 50%;
-    max-height: 80%;
-    padding: 40% auto;
-    /* border: 2px solid rebeccapurple; */
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
 }
 
-.bannar img {
-    width: 500px;
-    height: 500px;
+.bannar-description {
+    padding-left: 100px;
+}
+
+.bannar-img {
+    /* border: 2px solid seagreen; */
+}
+
+.bannar-img img {
+    width: 100%;
+    height: 100%;
 }
 
 .bannar-description h3 {
@@ -136,13 +144,172 @@ nav a {
 
 
 
+/* online game section styles */
+.online-game {
+    margin-top: 50px;
+    padding-top: 40px;
+    /* border: 2px solid; */
+}
+
+.game-images-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.online-description {
+    text-align: center;
+}
+
+.online-game-title {
+    /* color: #0B0223; */
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.fanny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-game-subtitle {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.game-images-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.game-img img {
+    width: 250px;
+    height: 300px;
+}
+
+.game-img p {
+    color: #534C64;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* play-download section */
+.play-download{
+    /* border: 2px solid; */
+}
+.play-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid ; */
+}
+.play-download {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 100px;
+}
+.play-image{
+    padding-left: 50px;
+}
+.play-description {
+    text-align: right;
+}
+.play-description h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.play-description p{
+    color: #534C64;
+    font-weight: 400;
+    font-size: 12px;
+}
+.play-instant {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.big-img{
+    height: 400px;
+    width: 350px;
+    margin-left: 90px;
+}
+.small-img{
+    height: 200px;
+    width: 150px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+}
 /* for mobile device */
 
 @media screen and (max-width: 576px) {
-    .nav-section{
+    .nav-section {
         flex-direction: column;
     }
-    .nav ul{
+
+    .nav ul {
         flex-direction: column;
+    }
+
+    .bannar {
+        flex-direction: column-reverse;
+        padding: 0px;
+        /* border: 2px solid blue; */
+    }
+
+    .bannar-img {
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .bannar-img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bannar-content {
+        width: 100%;
+        flex-direction: column;
+        /* border: 2px dashed red; */
+    }
+
+    .bannar-description {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* online game section */
+    .game-images-container {
+        flex-direction: column;
+    }
+
+    .online-game-title {
+        /* color: #0B0223; */
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .online-game-subtitle {
+        font-size: 12px;
+    }
+
+    .game-images-container {
+        padding-left: 80px;
+    }
+    /* play-download */
+    .play-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .play-description{
+        text-align: center;
     }
 }
